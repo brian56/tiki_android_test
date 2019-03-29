@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Tiki Test</string>
+
+    <!--Main activity-->
+    <string name="hot_keyword">Từ khóa hot</string>
+    <string name="load_successful">Tải dữ liệu thành công</string>
+    <string name="load_failed_please_try_again">Có lỗi xảy ra, vui lòng thử lại</string>
+</resources>
