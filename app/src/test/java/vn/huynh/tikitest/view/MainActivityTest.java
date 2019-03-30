@@ -21,23 +21,21 @@ import vn.huynh.tikitest.R;
  */
 
 @RunWith(RobolectricTestRunner.class)
-@Config(constants = BuildConfig.class, sdk=21)
+@Config(constants = BuildConfig.class, sdk = 21)
 public class MainActivityTest {
 
     private MainActivity mainActivity;
 
     @Before
-    public void setUp() throws Exception
-    {
-        mainActivity = Robolectric.buildActivity( MainActivity.class )
+    public void setUp() throws Exception {
+        mainActivity = Robolectric.buildActivity(MainActivity.class)
                 .create()
                 .visible()
                 .get();
     }
 
     @Test
-    public void shouldNotBeNull() throws Exception
-    {
+    public void shouldNotBeNull() throws Exception {
         Assert.assertNotNull(mainActivity);
         ProgressBar progressBar = mainActivity.findViewById(R.id.pb_loading);
         Assert.assertNotNull(progressBar);
